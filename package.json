@@ -16,7 +16,8 @@
         "dev": "bun run index.ts",
         "build": "bun run build.ts",
         "prepublishOnly": "bun run build",
-        "release": "bun run scripts/release.ts"
+        "release": "bun run scripts/release.ts",
+        "publish:build": "bun run build && bun publish --access public"
     },
     "keywords": [
         "mcp",
@@ -29,11 +30,11 @@
         "lua",
         "typescript"
     ],
-    "author": "",
+    "author": "Aleksander Evensen",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/AleksanderEvensen/fx-natives-mcp"
     },
     "engines": {
         "node": ">=18.0.0"
