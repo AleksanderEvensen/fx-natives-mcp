@@ -6,7 +6,7 @@
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "bin": {
-        "cfx-natives-mcp": "./dist/index.js"
+        "fx-natives-mcp": "./dist/index.js"
     },
     "files": [
         "dist"
