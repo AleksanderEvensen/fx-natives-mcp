@@ -20,7 +20,7 @@
         "build": "bun run build.ts",
         "prepublishOnly": "bun run build",
         "release": "bun run scripts/release.ts",
-        "publish:build": "bun run build && bun publish --access public"
+        "publish:build": "bun run build && npm publish --access public"
     },
     "keywords": [
         "mcp",
