@@ -214,7 +214,6 @@ function unindent(text: string) {
         .slice(1)
         .reduce((minSpaces, line) => {
             if (!line.trim()) return minSpaces;
-            // count spaces until first character
 
             let i = 0;
             for (i = 0; i < line.length; i++) {
@@ -326,6 +325,7 @@ function createDescriptor(lang: "TS" | "Lua", native: Native) {
 
         return (
             typeDocParams.join("\n") +
+            "\n" +
             unindent(`
                 ---@return ${returnTypes.join(", ")}
                 local ${returnVariables.join(", ")} = ${sanitizeMethodName(native.name)}(${paramNames.join(", ")})

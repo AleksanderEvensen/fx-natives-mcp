@@ -16,7 +16,7 @@
     ],
     "scripts": {
         "inspect": "mcp-inspector bun run .",
-        "dev": "bun run index.ts",
+        "dev": "bun run src/index.ts",
         "build": "bun run build.ts",
         "prepublishOnly": "bun run build",
         "release": "bun run scripts/release.ts",
